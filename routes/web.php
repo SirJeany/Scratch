@@ -25,7 +25,8 @@ Route::get('/test', function () {
 });
 
 //Route wildcards:
-Route::get('/post/{posts}', function ($post) {
+/*
+Route::get('/posts/{post}', function ($post) {
     $posts = [
         'my-first-post' => 'Hey there, this is the first one!',
         'my-second-post' => 'Hey there, Number 2!',
@@ -38,3 +39,8 @@ Route::get('/post/{posts}', function ($post) {
         'post' => $posts[$post]
     ]);
 });
+*/
+
+//These routes can also be handled using controllers:
+// php artisan make:controller PostsController
+Route::get('/posts/{post}', 'PostsController@show');
