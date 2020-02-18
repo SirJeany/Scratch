@@ -7,6 +7,6 @@
     <title>Post</title>
 </head>
 <body>
-    <h1>This is a post/{{$post}}</h1>
+    <h1>This is a post: {{$post->body}}</h1>
 </body>
 </html>
