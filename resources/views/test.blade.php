@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
-    <style>
-        h1 {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1>{{$name}}</h1>
+@extends('layout')
 
-    <a href="mailto:foo@bar.com">Mail To</a>
-</body>
-</html>
+@section('content')
+<div class="flex-center position-ref full-height">
+    <div class="content">
+        <div class="title m-b-md">
+            Testing route and layout
+        </div>
+        
+        <div class="links">
+            <a href="/">Home</a>
+        </div>
+    </div>
+
+</div>
+
+@endsection
